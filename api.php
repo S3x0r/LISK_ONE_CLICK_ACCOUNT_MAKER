@@ -42,7 +42,7 @@ $o=KE($p,true);
 $a=AD($o);
 
 echo '  Your new Lisk address:'.PHP_EOL;
-echo "  $a".PHP_EOL.PHP_EOL.PHP_EOL;
+echo "  $a"."L".PHP_EOL.PHP_EOL.PHP_EOL;
 echo '  12 word Passphrase for that account: '.PHP_EOL;
 echo '  \''.$p.'\''.PHP_EOL;
 echo '  ';
