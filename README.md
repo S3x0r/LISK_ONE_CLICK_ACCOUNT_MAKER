@@ -1,7 +1,7 @@
 # LISK One Click Account Maker for Windows
 With this tool you can easy create fresh new Lisk account
 
-To Make Lisk account just click on: MAKE_ACCOUNT.BAT
+To Make new Lisk account just click on: MAKE_ACCOUNT.BAT
 
 There is PHP included for easy purpose just to run and work, but if you are afraid about some exe or dll files
 you can compare it with official PHP site with that local one.
