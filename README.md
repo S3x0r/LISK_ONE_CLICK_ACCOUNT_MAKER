@@ -1,5 +1,5 @@
 # LISK One Click Account Maker for Windows
-With this tool you can easy create fresh new Lisk account\
+With this tool you can easy create fresh new Lisk account
 
 To Make Lisk account just click on: MAKE_ACCOUNT.BAT
 
