@@ -3,8 +3,9 @@ With this tool you can easy create fresh new Lisk account
 
 To Make new Lisk account just click on: MAKE_ACCOUNT.BAT
 
-There is PHP included for easy purpose just to run and work, but if you are afraid about some exe or dll files
-you can compare it with official PHP site with that local one.
+There is PHP script language interpreter included for easy purpose just to run and work,
+but if you are afraid about some exe or dll files you can compare it with official
+PHP site with that local one. Also all files was scanned with virustotal.
 
 https://windows.php.net/downloads/releases/archives/php-7.2.4-Win32-VC15-x86.zip
 <br>
