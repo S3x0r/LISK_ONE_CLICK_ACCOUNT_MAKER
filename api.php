@@ -1,59 +1,10 @@
-<?php /* minions powered */
-
-$d1=
-  'B@B@B@B@@@B@B@B@B@B@B@B@@@B@B@B@B@B@@@@@@@B@B@B@B@B@@@B@B'.PHP_EOL.
-  '@B@BGB@B@B@B@B@@@B@@@B@B@B@@@B@B@B@B@B@@@B@B@B@@@B@@@@@B@'.PHP_EOL.
-  'B@B@  :@Bi:@B@B@B@@@B@BGS522s22SXMB@B@B@B@B@B@B@B@@@B@B@B'.PHP_EOL.
-  '@: r   :   H@B@B@B@9sr;rrs5ssss2H2229M@@@B@B@B@B@B@B@B@@@'.PHP_EOL.
-  'B         S@B@@@B,      ,::rsGB5:,  ,:i9@@B@B@B@B@B@, B@B'.PHP_EOL.
-  '@B@M,     @B@X@X   rMB@Mr:,:MS          iB@B@B2  B@   @@@'.PHP_EOL.
-  'B@@@B@    :@BGB  sB@B@;sBBrii  rB@B@B2:, :B@B@i         s'.PHP_EOL.
-  '@@@B@@@ii:sB@9X ,@@B,    BSi  9Bi ,B@B@r,  M@B@B        S'.PHP_EOL.
-  'B@@@B@B@92,@9,X  @B@,   ,@2i  @     B@GX:,  B@@,     X@@B'.PHP_EOL.
-  '@B@@@B@BMs:r@r;i i@B@G2M@S::, @s  ,X@G92,   ,B@    B@B@B@'.PHP_EOL.
-  '@@B@B@M@B2r:sssr: i29@B5i,  r :@B@B@BXr,,   ,@;::rM@B@B@B'.PHP_EOL.
-  '@B@B@B@B@Gs:rHSSsi:,,,,     ,:,,rssri,,,iir,9s  rB@B@B@B@'.PHP_EOL.
-  'B@B@B@B@B@si:XSSSsrsi::,,,::,:::,,,, ,,:;rsr,  :B@B@B@B@B'.PHP_EOL.
-  '@B@B@B@@@BG: :XXG: :rssssS3x0rS2ssr::irrrrrr  ,B@B@B@B@B@'.PHP_EOL.
-  'B@B@B@B@B@Bs  :SGM                 :rrrsr,    G@B@@@B@B@@'.PHP_EOL.
-  '@B@@@B@B@B@Xs  :SM@               ,ssss,     r@B@B@B@B@B@'.PHP_EOL.
-  'B@B@B@@@B@B2Hs  :SM@@sr:,      :sMG22s,   ,r:@@@B@B@B@B@B'.PHP_EOL.
-  '@B@B@B@B@B@2s9s,  ,::r222sHSX222srri:   ,rrirB@B@B@B@B@B@'.PHP_EOL.
-  'B@B@B@B@B@B2s292                       :rri:2@B@B@B@B@B@B'.PHP_EOL.
-  '@B@B@B@@@B@Ss29s,  ,, ,         ,     rrrii,M@@B@@@B@B@B@'.PHP_EOL.
-  'B@B@B@B@B@@MsXGs,,,,, ,,:i:,,,       ,ssrriiB@B@B@@@B@B@B'.PHP_EOL.
-  '@B@B@B@@@B@r:r5r ,,,, ,,,,, ,,       ,rii:,,@B@B@@@B@B@B@'.PHP_EOL.
-  'B@B@B@B@B@@:   ,,:,,,,          ,,          G@@@B@B@B@B@B'.PHP_EOL.
-  '@B@B@B@B@B@B   ,,,,,,,,   ,                X@B@B@B@B@B@@@'.PHP_EOL.
-  'B@B@B@B@B@B@B        , , ,,               9@B@B@B@B@B@B@B'.PHP_EOL.
-  '@B@B@@@B@B@B@Br                         i@@B@B@B@B@B@B@B@'.PHP_EOL.
-  'B@B@B@B@B@@@B@B@Br:                  rM@B@B@B@B@B@B@B@B@@'.PHP_EOL.
-  '@B@B@B@B@@@B@B@@@B@B@2           :GB@BBG9XXSSS9X9999G9GGM'.PHP_EOL.
-  'B@B@@@B@B@B@B@@@B@B@@s           Srri;i;rrrssssssss22S5HS'.PHP_EOL.
-  '@B@B@B@B@B@BBMMGG9G:              :,::::iir;rs22SXGGMMMMB'.PHP_EOL.
-  '               Lisk One Click Account Maker'.PHP_EOL.PHP_EOL.
-  'Hello my Folk'.PHP_EOL.
-  'I just in the fly generated fresh LISK address for you!'.PHP_EOL.
-  PHP_EOL.PHP_EOL;
+<?php
 
 $passphrase = G();
 $o = KE($passphrase, true);
 $address = AD($o);
 
-$d2 = 'Your new Lisk address:'.
-      PHP_EOL.
-      $address.'L'.
-      PHP_EOL.PHP_EOL.PHP_EOL.
-      '12 word Passphrase for that account: '.
-      PHP_EOL.
-      $passphrase;
-
-$file = '../address.txt';
-$fh = fopen($file, 'w+');
-fwrite($fh, $d1.$d2);
-fclose($fh);
-
-pclose(popen("start /B notepad.exe $file", 'r'));
+echo $d2 = 'Your new Lisk address:'.PHP_EOL.$address.'L'.PHP_EOL.PHP_EOL.PHP_EOL.'Passphrase: '.PHP_EOL.$passphrase;
 
 function G()
 {
