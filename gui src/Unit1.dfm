@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = 697
-  Top = 287
+  Left = 453
+  Top = 137
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Lisk Account Maker'
-  ClientHeight = 228
-  ClientWidth = 732
+  ClientHeight = 225
+  ClientWidth = 754
   Color = 4069888
   Font.Charset = EASTEUROPE_CHARSET
   Font.Color = clWindowText
@@ -13,6 +13,7 @@ object Form1: TForm1
   Font.Name = 'Verdana'
   Font.Style = [fsBold]
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 18
   object Image1: TImage
@@ -189,7 +190,7 @@ object Form1: TForm1
     OnClick = Image1Click
   end
   object Image2: TImage
-    Left = 672
+    Left = 704
     Top = 16
     Width = 41
     Height = 41
@@ -5254,11 +5255,36 @@ object Form1: TForm1
       8000000080010000000100000001000020010000E0010000E0010000F0010000
       F0030000F8030000F8030000}
   end
+  object Image3: TImage
+    Left = 8
+    Top = 256
+    Width = 737
+    Height = 225
+    Cursor = crHandPoint
+    Hint = 'Click to save paper wallet'
+    HelpType = htKeyword
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = Image3Click
+  end
+  object Label1: TLabel
+    Left = 8
+    Top = 232
+    Width = 117
+    Height = 18
+    Caption = 'Paper wallet:'
+    Font.Charset = EASTEUROPE_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object memo1: TMemo
     Left = 8
     Top = 80
-    Width = 721
-    Height = 145
+    Width = 737
+    Height = 137
     TabStop = False
     BevelInner = bvNone
     BevelOuter = bvNone
@@ -5271,5 +5297,26 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 584
+    Top = 16
+    Width = 25
+    Height = 26
+    TabOrder = 1
+    Visible = False
+  end
+  object Edit2: TEdit
+    Left = 648
+    Top = 16
+    Width = 25
+    Height = 26
+    TabOrder = 2
+    Visible = False
+  end
+  object SaveDialog1: TSaveDialog
+    FileName = 'wallet.jpeg'
+    Left = 616
+    Top = 16
   end
 end

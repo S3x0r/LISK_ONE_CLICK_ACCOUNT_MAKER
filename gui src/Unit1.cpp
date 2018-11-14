@@ -40,7 +40,14 @@ void __fastcall TForm1::Image1Click(TObject *Sender)
 
   PROCESS_INFORMATION ap;
   ZeroMemory(&ap, sizeof(PROCESS_INFORMATION));
-  if (!CreateProcess("php//php.exe", "-f api.php", NULL, NULL, true, 0, NULL, NULL, &zy, &ap)) {
+
+
+  AnsiString sciezka = ExpandFileName(ExtractFilePath(Application->ExeName));
+
+  Edit1->Text = sciezka + "src\\php\\php.exe";
+  Edit2->Text = "-f \"" +sciezka + "src\\api.php\"";
+
+  if (!CreateProcess(Edit1->Text.c_str(), Edit2->Text.c_str(), NULL, NULL, true, 0, NULL, NULL, &zy, &ap)) {
       RaiseLastWin32Error();
   }
 
@@ -74,5 +81,17 @@ void __fastcall TForm1::Image1Click(TObject *Sender)
   CloseHandle(ap.hProcess);
   CloseHandle(ReadPipeHandle);
   CloseHandle(WritePipeHandle);
+
+  Form1->Height = 520;
+  Image3->Picture->LoadFromFile(sciezka + "wallet.jpeg");
 }
 //---------------------------------------------------------------------------
+void __fastcall TForm1::Image3Click(TObject *Sender)
+{
+  if (SaveDialog1->Execute())
+  {
+    Image3->Picture->SaveToFile(SaveDialog1->FileName);
+  }
+}
+//---------------------------------------------------------------------------
+

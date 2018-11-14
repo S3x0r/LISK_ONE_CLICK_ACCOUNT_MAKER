@@ -6,6 +6,18 @@ $address = AD($o);
 
 echo $d2 = 'Your new Lisk address:'.PHP_EOL.$address.'L'.PHP_EOL.PHP_EOL.PHP_EOL.'Passphrase: '.PHP_EOL.$passphrase;
 
+/* generate image */
+$img = imagecreatefrompng(__DIR__.'/templates/1.png'); 
+$font = imageloadfont(__DIR__.'/fonts/1.gdf');
+$black = imagecolorallocate($img, 1, 1, 1);
+
+imagestring($img, $font, 17, 157, $address.'L', $black);
+imagestring($img, $font, 17, 203, $passphrase, $black);
+
+imagejpeg($img, __DIR__.'../../wallet.jpeg');
+imagedestroy($img);
+
+
 function G()
 {
     return g7(sodium_bin2hex(openssl_random_pseudo_bytes(16)));
