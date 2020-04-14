@@ -6,7 +6,7 @@ Easy create fresh new Lisk account by one mouse click!
 To Make new Lisk account just run: Lisk Account Maker.exe
 
 There is PHP script language interpreter included and also gui source code
-If you are afraid about some exe or dll files you can compare it with official
+If you are afraid or paranoid about some exe or dll files you can compare it with official
 PHP site with that local one.
 
 https://windows.php.net/downloads/releases/archives/php-7.2.4-Win32-VC15-x86.zip
